@@ -1,0 +1,15 @@
+# Ignore dependency folders in both apps
+**/node_modules/
+node_modules/
+
+# Ignore local environment environment configurations (secrets)
+**/.env
+**/.env.local
+.env
+
+# Ignore build outputs and logs
+**/dist/
+**/.DS_Store
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
