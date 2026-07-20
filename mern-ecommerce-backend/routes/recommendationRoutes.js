@@ -7,7 +7,7 @@ const { getRecommendations } = require('../utils/recommendationEngine');
 // 1. SEED ROUTE: Changed to GET for easy browser testing
 router.get('/seed', async (req, res) => {
   try {
-    await Product.deleteMany({}); // Clears old entries
+    await Product.deleteMany({}); // Clears  old entries
     const sampleData = [
       { name: "Pro Wireless Gaming Mouse", description: "RGB mouse with extreme precision", category: "Electronics", tags: ["wireless", "gaming", "mouse", "rgb"], price: 79.99 },
       { name: "Ergonomic Office Mouse", description: "Comfortable mouse for productive hours", category: "Electronics", tags: ["wireless", "office", "mouse", "ergonomic"], price: 49.99 },
